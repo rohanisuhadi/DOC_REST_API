@@ -12,16 +12,22 @@ https://api.audiobuku.com
 | Accept | application/json |
 | Authorization | Bearer key |
 
-##### List API Methods
+## List API Methods
 | End Point | HTTP Method | Deskripsi |
 | --- | --- | --- |
 | [`/api/v1/collections`](#collections1) | GET | Show data audiobook filter by collection id |
 | [`/api/v1/audiobooks?collection_id={id}`](#audiobooks1) | GET | Show data audiobook filter by collection id |
-| Accept | application/json |  |
-| Authorization | Bearer key |  |
+| [`/api/v1/audiobooks?category_id={id}`](#audiobooks1) | GET | Show data audiobook filter by category audiobook id |
+| [`/api/v1/audiobooks?narrator_id={id}`](#audiobooks1) | GET | Show data audiobook filter by narrator id |
+| [`/api/v1/audiobooks?author_id={id}`](#audiobooks1) | GET | Show data audiobook filter by author id |
+| [`/api/v1/audiobooks?publisher_book_id={id}`](#audiobooks1) | GET | Show data audiobook filter by publisher book id |
+| [`/api/v1/audiobooks?publisher_audiobook_id={id}`](#audiobooks1) | GET | Show data audiobook filter by publisher audio id |
+| [`/api/v1/audiobooks?search={character}`](#audiobooks1) | GET | Show data audiobook filter by character or title |
+| [`/api/v1/categories`](#category) | GET | Show data category audiobook |
+| [`/api/v1/categories/{id}`](#category) | GET | Show data subcategory audiobook |
 
 <a name="collections1"/>
-#### Result collection  
+## Result collection  
 
 ```json
 [
@@ -48,7 +54,7 @@ https://api.audiobuku.com
 
 
 <a name="audiobooks1"/>
-#### Result audiobooks by collection  
+## Result audiobooks  
 
 ```json
 [
@@ -96,4 +102,25 @@ https://api.audiobuku.com
         ]
     }
     ]
+```
+<a name="category"/>
+## Result category  
+
+```json
+{
+    "error": true,
+    "userMessage": "success",
+    "data": [
+        {
+            "id": 83,
+            "title": "BELAJAR BAHASA",
+            "picture_url": "https://storage.googleapis.com/audiobukucover/456_20161227175855.jpg"
+        },
+        {
+            "id": 99,
+            "title": "BIOGRAFI & MEMOAR",
+            "picture_url": "https://storage.googleapis.com/audiobukucover/490_20161226030219.jpg"
+        }
+    ]
+}
 ```
