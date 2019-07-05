@@ -22,7 +22,7 @@ https://api.audiobuku.com
 | [`/api/v1/audiobooks?author_id={id}`](#audiobooks1) | GET | Show data audiobooks filter by author id |
 | [`/api/v1/audiobooks?publisher_book_id={id}`](#audiobooks1) | GET | Show data audiobooks filter by publisher book id |
 | [`/api/v1/audiobooks?publisher_audiobook_id={id}`](#audiobooks1) | GET | Show data audiobooks filter by publisher audio id |
-| [`/api/v1/audiobooks?search={character}`](#audiobooks1) | GET | Show data audiobook filter by character or title |
+| [`/api/v1/audiobooks?search={character}`](#audiobooks1) | GET | Show data audiobook filter by character or title book, narrator, publisher book, author |
 | [`/api/v1/audiobooks/{id}`](#audiobook) | GET | Show all data audiobook filter by id audiobook |
 | [`/api/v1/categories`](#category) | GET | Show data category audiobook |
 | [`/api/v1/categories/{id}`](#category) | GET | Show data subcategory audiobook |
